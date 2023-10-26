@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Dancing+Script&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Pacifico&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,400&family=Ysabeau+Infant:ital,wght@1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ; /*Todo meu margin é somado*/
+}
+
+html {
+  scroll-behavior: smooth; /* Scrool suave*/
+  font-size: 10px;    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;   
+}
+
+#person {
+  height: 100vh; /*View Height* 100% da minha tela*/
+  width: 100%; /*view width 100% da minha tela*/
+  display: flex;
+  align-items: center; /*Centraliza verticalmente*/
+  background-color: blueviolet;
+}
+
+.person-content {
+  background-color:blue;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  /*Centraliza horizontalmente*/
+  flex-direction: column; /*Tudo que estiver dentro fica em colunas verticalmente*/
+}
+
+.person-content div h1 {
+  padding: 0px 4px;
+  font-size: 4.5rem; /*multiplica o valor referente ao meu html como o mu html é 10 então a font size sera de 45 px*/
+  line-height: 6rem;
+}
+
