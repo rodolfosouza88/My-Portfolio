@@ -6,6 +6,14 @@
   box-sizing: border-box ; /*Todo meu margin é somado*/
 }
 
+:root {
+  --color-white: #fff;
+  --color-pink: #d12f7a;
+  --color-black: #0c0c0c;
+  --color-purple: #5f01ac;
+  --color-blue: #073fcc; 
+}
+
 html {
   scroll-behavior: smooth; /* Scrool suave*/
   font-size: 10px;    
@@ -24,18 +32,46 @@ body {
 }
 
 .person-content {
-  background-color:blue;
+  background: var(--color-black);
   height: 100%;
   width: 50%;
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;  /*Centraliza horizontalmente*/
   flex-direction: column; /*Tudo que estiver dentro fica em colunas verticalmente*/
 }
 
 .person-content div h1 {
+  color: transparent;
+  
   padding: 0px 4px;
   font-size: 4.5rem; /*multiplica o valor referente ao meu html como o mu html é 10 então a font size sera de 45 px*/
-  line-height: 6rem;
+  line-height: 6rem; /*espaço entre as linhas*/
+  animation: written_text .5s ease forwards;
 }
 
+.person-content div h1:nth-child(1){
+  animation-delay: 1s;  
+}
+
+.person-content div h1:nth-child(2){
+    animation-delay: 2s;  
+  }
+
+.person-content div h1:nth-child(3){   
+  animation: written_text_name .5s ease forwards;
+  animation-delay: 3s;
+}
+
+/*Animação*/
+@keyframes written_text {
+  100% {
+    color: var(--color-white)
+  }
+}
+
+@keyframes written_text_name{
+    100% {
+      color: var(--color-blue);
+    }
+  }
