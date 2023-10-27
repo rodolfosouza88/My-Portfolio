@@ -28,7 +28,7 @@ body {
   width: 100%; /*view width 100% da minha tela*/
   display: flex;
   align-items: center; /*Centraliza verticalmente*/
-  background-color: blueviolet;
+  background-color: var(--color-black)
 }
 
 .person-content {
@@ -43,7 +43,7 @@ body {
 
 .person-content div h1 {
   color: transparent;
-  
+  position: relative; /*Elemento h1 relativo, sendo pai do span para o span ficar na mesma linha que o h1*/
   padding: 0px 4px;
   font-size: 4.5rem; /*multiplica o valor referente ao meu html como o mu html é 10 então a font size sera de 45 px*/
   line-height: 6rem; /*espaço entre as linhas*/
@@ -63,15 +63,102 @@ body {
   animation-delay: 3s;
 }
 
+.person-content div h1 span {
+  position: absolute; /*Se referencia ao componente pai (h1) que está com a posição relativa.*/
+  left: 0;
+  width: fit-content;
+  height: 100%;
+  background-color: var(--color-pink);
+  animation: written_text_box 1s ease; 
+  animation-delay: .5s 
+}
+
+.person-content div h1:nth-child(1) span {
+  animation-delay: 5s;
+}
+
+.person-content div h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+
+.person-content div h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+
+.person-name {
+  margin-top: 11rem;
+}
+
+.stacks-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.stacks-content h3 {
+  color: var(--color-white);
+  font-size: 1.15rem; 
+  margin-left: 20px;
+}
+
+.stacks {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.stacks ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+}
+
+.stacks ul li img {
+  width: 30px;
+  height: auto;
+  transition: transform .3s ease;
+}
+
+.stacks ul li div img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.stacks ul li div:hover::after {
+  content: attr(data);
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  color: var(--color-white);
+}
+
 /*Animação*/
 @keyframes written_text {
   100% {
-    color: var(--color-white)
+  color: var(--color-white)
   }
 }
 
 @keyframes written_text_name{
-    100% {
-      color: var(--color-blue);
+  100% {
+  color: var(--color-blue);
+    }
+  }
+
+  @keyframes written_text_box{
+   50% {
+   width: 100%;
+   left:0;
+    }
+
+  100% {
+  width: 0;
+  left: 0;
     }
   }
