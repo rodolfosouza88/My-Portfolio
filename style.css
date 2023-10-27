@@ -138,6 +138,56 @@ body {
   color: var(--color-white);
 }
 
+.person-background {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(/img/telas.jpg) ;
+  background-size: cover;
+  background-position: top center ;
+  z-index: 1;
+}
+
+.person-background::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(270deg, transparent 30%, var(--color-black));
+}
+
+.wrapper-profile-photo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 280px;
+  padding: 14px;
+  margin: 20px 15px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
+    radial-gradient(#000 60%, transparent 0),
+    linear-gradient(to top right,#ffa500 0%, #ff1493 100%);
+}
+
+.profile-photo {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.links img {
+  width: 30px;
+  height: 30px;
+}
+
 /*Animação*/
 @keyframes written_text {
   100% {
