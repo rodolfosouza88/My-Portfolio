@@ -3,5 +3,5 @@ Projeto da minha página pessoal contendo informações sobre mim e minha carrei
 
 Portfólio pessoal Dev Web - Rodolfo Vasconcellos de Souza
 
-stacks: Javascript, HTML, CSS
+Stacks: Javascript, HTML, CSS
 💻
