@@ -4,12 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Portfólio - Rodolfo Souza</title>
 </head>
 
 <body>
+    <!--Header-->
+    <section id="header">
+        <a class="header-title" href="">
+            <h1>rodolfosouza.dev</h1>
+        </a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li> <a href="#person">Home</a></li>
+                <li> <a href="#about">Sobre</a></li>
+                <li> <a href="#projects">Projetos</a></li>
+                <li> <a href="#contacts">Contatos</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!--Fim do Header-->
+
     <!--Person-->
     <section id="person">
         <div class="person-content">
@@ -69,14 +89,14 @@
                 <img class="profile-photo" src="/img/profile-photo.jpeg" alt="">
             </div>
 
-            <div class="links" >
-               <a href="https://github.com/rodolfosouza88" target="_blank">
-                <img src="/svg/logo-github.svg" alt="">
-              </a> 
+            <div class="links">
+                <a href="https://github.com/rodolfosouza88" target="_blank">
+                    <img src="/svg/logo-github.svg" alt="">
+                </a>
 
-               <a href="https://www.instagram.com/rodolfovsouza/" target="_blank">
-                <img src="/svg/logo-insta.svg" alt="">
-               </a>
+                <a href="https://www.instagram.com/rodolfovsouza/" target="_blank">
+                    <img src="/svg/logo-insta.svg" alt="">
+                </a>
 
                 <a href="https://www.linkedin.com/in/rodolfosouza88/" target="_blank">
                     <img src="/svg/logo-linkedin.svg" alt="">
@@ -132,11 +152,16 @@
     <section id="projects">
         <div class="projects-title">
             <h2>PROJETOS ⚒️</h2>
-        </div>
+            
+        </div class="container-projects">
 
-        <div class="wrapper-projects">
-            <div class="card-project">
-                <div class="content-project">
+          <div class="swiper mySwiper">
+            <!--wrapper projects-->
+
+            <div class="swiper-wrapper">
+
+                <!--content-project-->
+                <div class="swiper-slide card-project">
                     <div class="image-project">
                         <a href="/">
                             <img src="/img/conversor.jpg" alt="conversor">
@@ -149,27 +174,9 @@
                         <a href="/" target="_blank">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
-            </div>
 
-            <div class="card-project">
-                <div class="content-project">
-                    <div class="image-project">
-                        <a href="/">
-                            <img src="/img/Pokedex.jpg" alt="conversor">
-                        </a>
-                    </div>
-                    <span>Pokedex</span>
-                    <p>Projeto feito com HTML, CSS e JavaScript que simula uma Pokeagenda do anime.</p>
-                    <div class="cta-project">
-                        <a href="https://github.com/rodolfosouza88/pokedex" target="_blank">Código <i
-                                class="fa-brands fa-github"></i> </a>
-                        <a href="https://pokedex-sepia-nu.vercel.app/" target="_blank">Site <i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="card-project">
-                <div class="content-project">
+                <!--Segundo card-->
+                <div class="swiper-slide card-project">
                     <div class="image-project">
                         <a href="/">
                             <img src="/img/conversor.jpg" alt="conversor">
@@ -178,11 +185,86 @@
                     <span>Conversor de moedas</span>
                     <p>Esse projeto, simula um conversor de moedas</p>
                     <div class="cta-project">
-                        <a href="/" target="_blank"> Código <i class="fa-brands fa-github"></i> </a>
+                        <a href="/" target="_blank">Código <i class="fa-brands fa-github"></i> </a>
                         <a href="/" target="_blank">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
+                <!--Fim do segundo card-->
+
+                <!--Terceiro card-->
+                <div class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="/">
+                            <img src="/img/conversor.jpg" alt="conversor">
+                        </a>
+                    </div>
+                    <span>Conversor de moedas</span>
+                    <p>Esse projeto, simula um conversor de moedas</p>
+                    <div class="cta-project">
+                        <a href="/" target="_blank">Código <i class="fa-brands fa-github"></i> </a>
+                        <a href="/" target="_blank">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!--Fim do terceiro card-->
+
+                <!--Quarto card-->
+                <div class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="/">
+                            <img src="/img/conversor.jpg" alt="conversor">
+                        </a>
+                    </div>
+                    <span>Conversor de moedas</span>
+                    <p>Esse projeto, simula um conversor de moedas</p>
+                    <div class="cta-project">
+                        <a href="/" target="_blank">Código <i class="fa-brands fa-github"></i> </a>
+                        <a href="/" target="_blank">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!--Fim do quarto card-->
+
+                <!--Quinto card-->
+                <div class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="/">
+                            <img src="/img/conversor.jpg" alt="conversor">
+                        </a>
+                    </div>
+                    <span>Conversor de moedas</span>
+                    <p>Esse projeto, simula um conversor de moedas</p>
+                    <div class="cta-project">
+                        <a href="/" target="_blank">Código <i class="fa-brands fa-github"></i> </a>
+                        <a href="/" target="_blank">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!--Fim do quinto card-->
+                
+                <!--Sexto card-->
+                <div class="swiper-slide card-project">
+                    <div class="image-project">
+                        <a href="/">
+                            <img src="/img/conversor.jpg" alt="conversor">
+                        </a>
+                    </div>
+                    <span>Conversor de moedas</span>
+                    <p>Esse projeto, simula um conversor de moedas</p>
+                    <div class="cta-project">
+                        <a href="/" target="_blank">Código <i class="fa-brands fa-github"></i> </a>
+                        <a href="/" target="_blank">Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!--fim do sexto card-->
+
             </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+          </div>
+
+        <div>
+
         </div>
 
 
@@ -206,7 +288,7 @@
                     <p>Franca, São Paulo, Brasil</p>
                 </div>
             </div>
-        
+
             <div class="contact-icon-content">
                 <div class="contact-icon">
                     <i class="fa-solid fa-square-envelope"></i>
@@ -223,7 +305,22 @@
 
 
     </section>
-    
+    <!--Fim Contatos-->
+
+    <!--Footer-->
+    <section id="footer">
+        <div class="container-footer">
+            <h2>Feito por 🦾</h2>
+            <h3>Rodolfo Vasconcellos de Souza ©️ 2023</h3>
+        </div>
+    </section>
+    <!--End Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script src="/script.js"></script>
 </body>
 
 </html>

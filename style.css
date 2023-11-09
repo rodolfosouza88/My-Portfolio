@@ -23,6 +23,54 @@ body {
     font-family: 'Poppins', sans-serif;   
 }
 
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  position: fixed;
+  z-index: 2;
+  background: "transparent";
+  transition: all .3s ease-out;
+}
+
+.header-title {
+  text-decoration: none;
+}
+
+.header-title h1 {
+  color: var(--color-white);
+  font-size: 2rem;
+  transition: opacity 3s ease;
+}
+
+.header-title h1:hover {
+  opacity: .8;
+}
+
+.nav-bar {
+  max-width: 350px;
+  width: 100%;
+}
+
+.nav-bar ul {  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-bar ul li {
+  list-style: none;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
 #person {
   height: 100vh; /*View Height* 100% da minha tela*/
   width: 100%; /*view width 100% da minha tela*/
@@ -118,7 +166,7 @@ body {
 }
 
 .stacks ul li img {
-  width: 30px;
+  width: 35px;
   height: auto;
   transition: transform .3s ease;
 }
@@ -179,8 +227,8 @@ body {
 }
 
 .links a img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin: 10px;
   filter: brightness(.8);
   transition: all .3s ease;
@@ -312,26 +360,50 @@ body {
   color: var(--color-white);
 }
 
-.wrapper-projects {
+/*.wrapper-projects {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   margin-top: 2rem;
   height: 500px; 
+}*/
+
+.container-projects {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+  max-width: 1020px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  margin-top: 2rem;
 }
 
 .card-project {
+  
+ /*width: 320px;
+  height: 450px;*/
+  height: 100%;
+  width: 100%;
   position: relative;
-  width: 320px;
-  height: 450px;
   padding: 30px 20px 20px;
-  margin: 0px 10px;
+  /*margin: 0px 10px;*/
   background: var(--color-white);
   display: flex;
   align-items: center;
   flex-direction: column;
   border-radius: 20px;
+  z-index: 1;
 }
 
 .card-project::after {
@@ -343,19 +415,23 @@ body {
   width: 100%;
   background: var(--color-purple);
   border-radius: 20px 20px 0px 0px;
+  z-index: -1;
 }
 
-.content-project {
+/*.content-project {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   z-index: 1;
 }
+*/
 
 .image-project {
-  height: 240px;
-  width: 250px;
+  max-height: 240px;
+  max-width: 250px;
+  height: 100%;
+  width: 100%;
   border-radius: 30px;
   border: 4px solid var(--color-purple);
   margin: 0 auto;
@@ -380,14 +456,14 @@ body {
   transform: scale(1.1);
 }
 
-.content-project span {
+.card-project span {
   color: var(--color-black);
   font-weight: bold;
   font-size: 1.7rem;
   margin: .75rem auto .5rem auto;
 }
 
-.content-project p {
+.card-project p {
   color: #3d3d4b;
   font-weight: bold;
   font-size: 1.1rem;
@@ -482,6 +558,24 @@ body {
 .contact-info a:hover {
   transition: color .3s ease;
   color: var(--color-blue);
+}
+
+#footer {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /*Força o footer a ficar em baixo*/
+  background: #191919;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--color-white);
 }
 
 /*Animação*/
