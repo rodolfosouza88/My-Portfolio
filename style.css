@@ -178,9 +178,17 @@ body {
     linear-gradient(to top right,#ffa500 0%, #ff1493 100%);
 }
 
-.links img {
+.links a img {
   width: 30px;
   height: 30px;
+  margin: 10px;
+  filter: brightness(.8);
+  transition: all .3s ease;
+}
+
+.links a img:hover {
+  transform: scale(1.15);
+  filter: brightness(1);
 }
 
 #about {
@@ -452,7 +460,7 @@ body {
 
 .contact-icon i {
   font-size: 2rem;
-  color: var(--color-white);
+  color: var(--color-blue);
 }
 
 .contact-info span {
