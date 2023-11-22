@@ -450,7 +450,7 @@ body {
 
 .profile-photo {
   max-width: 220px;
-  width: 80%;
+  width: 100%;
   border-radius: 50%;
   height: 380px;
 }
