@@ -449,10 +449,10 @@ body {
 }
 
 .profile-photo {
-  max-width: 320px;
-  width: 100%;
+  max-width: 220px;
+  width: 80%;
   border-radius: 50%;
-  height: 280px;
+  height: 380px;
 }
 
 .links a img {
